@@ -1,11 +1,12 @@
 {
   "name": "ww-bookkeeping",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "dist-electron/main/index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vite --host",
+    "dev:electron": "vite",
+    "build": "tsc -b && vite build && electron-builder",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -16,16 +17,26 @@
     }
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.10",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "framer-motion": "^12.19.1",
+    "gsap": "^3.13.0",
+    "lucide-react": "^0.523.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.2",
+    "tailwindcss": "^4.1.10"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
     "@types/node": "^24.0.4",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^4.5.2",
     "electron": "^37.0.0",
+    "electron-builder": "^26.0.12",
     "electron-updater": "^6.6.2",
     "eslint": "^9.29.0",
     "eslint-plugin-react-hooks": "^5.2.0",

@@ -1,5 +1,6 @@
 ignoredBuiltDependencies:
   - esbuild
+  - '@tailwindcss/oxide'
 
 onlyBuiltDependencies:
   - electron

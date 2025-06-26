@@ -2,6 +2,9 @@
   "name": "ww-bookkeeping",
   "private": true,
   "version": "0.1.0",
+  "description": "现代化个人财务管理应用，采用iOS毛玻璃风格设计",
+  "license": "MIT",
+  "author": "ww记账",
   "main": "dist-electron/main/index.js",
   "scripts": {
     "dev": "vite --host",
